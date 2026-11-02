@@ -32,7 +32,7 @@
   --f-display:"Syne","Avenir Next","Segoe UI",system-ui,sans-serif;
   --f-body:"Manrope","Segoe UI",system-ui,-apple-system,sans-serif;
   --f-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
-  --s-1:.8125rem; --s0:1rem; --s1:1.25rem; --s2:1.7rem; --s3:clamp(2.6rem,6vw,4.6rem); --s4:clamp(3.4rem,10.5vw,9rem);
+  --s-1:.8125rem; --s0:1rem; --s1:1.25rem; --s2:1.7rem; --s3:clamp(2.6rem,6vw,4.6rem); --s4:clamp(3.2rem,9.5vw,8rem);
   color-scheme:light;
 }
 *{box-sizing:border-box}
@@ -333,7 +333,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       </article>
 
       <article class="proj glass reveal" data-tilt>
-        <div class="proj-top"><span class="chip shipped">Shipped</span><span class="kind">Stochastic calculus</span></div>
+        <div class="proj-top"><span class="chip shipped">Built</span><span class="kind">Stochastic calculus</span></div>
         <h3>Options pricing model</h3>
         <div class="viz short"><canvas id="vBS"></canvas><span class="cap"><b>call price</b> vs payoff · <span id="sigOut">σ = 0.20</span></span></div>
         <div class="stats"><div><b>16×</b><small>vectorised Monte Carlo speed-up</small></div><div><b>81%</b><small>less standard error</small></div><div><b>195</b><small>automated checks</small></div></div>
@@ -343,7 +343,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       </article>
 
       <article class="proj glass reveal" data-tilt>
-        <div class="proj-top"><span class="chip shipped">Shipped</span><span class="kind">Machine learning</span></div>
+        <div class="proj-top"><span class="chip shipped">Built</span><span class="kind">Machine learning</span></div>
         <h3>ML-powered stock prediction</h3>
         <div class="stats"><div><b>20</b><small>NSE stocks</small></div><div><b>52</b><small>look-ahead checks</small></div><div><b>±0.4%</b><small>95% CI on RMSE gain</small></div></div>
         <p>A walk-forward forecasting pipeline over five years of daily data: an LSTM with engineered lag, volatility and sector-momentum features, tested against ARIMA, Ridge and predict-zero baselines with Diebold–Mariano tests and block-bootstrap confidence intervals.</p>
@@ -352,7 +352,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       </article>
 
       <article class="proj glass reveal" data-tilt>
-        <div class="proj-top"><span class="chip shipped">Shipped</span><span class="kind">Algorithms</span></div>
+        <div class="proj-top"><span class="chip shipped">Built</span><span class="kind">Algorithms</span></div>
         <h3>DSA-optimised financial algorithm simulator</h3>
         <div class="stats"><div><b>500</b><small>trading venues</small></div><div><b>88%</b><small>less compute time</small></div><div><b>54</b><small>automated checks</small></div></div>
         <p>A C++17 simulator of a 500-venue trading network: Dijkstra least-cost order routing plus a dynamic-programming portfolio allocator. Heap-based Dijkstra and a rolling-array DP cut end-to-end compute time by 88% against a textbook O(V²) and memoised baseline, with identical outputs.</p>
