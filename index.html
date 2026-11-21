@@ -147,6 +147,7 @@ h2 .ghost{color:transparent;-webkit-text-stroke:1.2px rgba(11,61,145,.5)}
 .about-side p{margin:0 0 20px;color:var(--fg)}
 @media (max-width:860px){.about-grid{grid-template-columns:1fr}}
 section.about{padding-bottom:0}
+section.about + section.block{padding-top:clamp(60px,9vw,110px)}
 /* now */
 .now{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:16px}
 .now .glass{padding:24px;min-width:0;display:flex;flex-direction:column;gap:10px}
@@ -236,7 +237,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <a class="mark" href="#top"><i></i>HJ</a>
     <ul>
       <li class="hide-s"><a href="#about">about</a></li>
-      <li class="hide-s"><a href="#now">now</a></li>
       <li><a href="#projects">projects</a></li>
       <li><a href="#resume">resume</a></li>
       <li><a href="#contact">contact</a></li>
@@ -293,15 +293,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <p>On weekends I'm deep in a Grand Prix, a Grand Slam or a big football night, and I'll never say no to a game of chess. Ask me about any of them and be ready for a long, very passionate conversation.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="block" id="now">
-  <div class="wrap">
-    <div class="sec-head reveal"><h2>Right <span class="ghost">now</span></h2></div>
-    <dl class="now">
-      <div class="glass reveal"><dt><i class="dot"></i>Running</dt><dd>A paper-trading bot on SPY, live on AWS.<span>It pushes its logs to GitHub every 15 minutes.</span></dd></div>
-    </dl>
   </div>
 </section>
 
