@@ -305,8 +305,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="txt">
           <div class="proj-top"><span class="chip shipped">Completed</span><span class="kind">Final-year project</span></div>
           <h3>Seizure detection with persistent homology</h3>
-          <p>Biosignal windows are delay-embedded into point clouds, built into simplicial complexes, and classified by their persistence features. The question we set out to answer: does that topological signal survive when sensor channels drop out mid-recording?</p>
-          <ul class="tags"><li>Persistent homology</li><li>EEG / ECG</li><li>CHB-MIT</li><li>SeizeIT2</li><li>Python</li></ul>
+          <div class="stats"><div><b>76.3%</b><small>seizures caught in 26 unseen patients</small></div><div><b>+4.6</b><small>points from TDA with 5 of 8 sensors dead</small></div><div><b>86 ms</b><small>to process each second of data</small></div></div>
+          <p>Wearable sensors fail partway through recordings. We built a real-time detector from EEG, ECG, EMG and motion signals that combines classic features with persistent homology of each signal's delay embedding, plus a health check that switches off failing sensors.</p>
+          <p>On 152 held-out seizures it catches 76.3% at about 8 false alarms an hour. With 5 of 8 sensors dead it still catches 69.2%, and the robustness target we fixed in advance held in all 72 injected-fault scenarios. The finding: topology doesn't raise clean accuracy, but it makes the detector measurably harder to break.</p>
+          <ul class="tags"><li>Persistent homology</li><li>XGBoost</li><li>EEG / ECG / EMG</li><li>SeizeIT2</li><li>CHB-MIT</li><li>Python</li></ul>
           <a class="go" href="https://github.com/hmjag07/seizure" target="_blank" rel="noopener">github.com/hmjag07/seizure ↗</a>
         </div>
         <div class="viz tall"><canvas id="vEmbed"></canvas><span class="cap"><b>delay embedding</b> · signal → loop</span></div>
